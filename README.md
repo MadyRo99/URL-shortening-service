@@ -14,6 +14,8 @@ Shortening URL application similar to TinyURL or Bitly.
 > username = "root"
 >
 > password = ""
+> 
+> **In order to create the database and the tables you just need to access 'localhost/', for example. Check the DB credentials before in config/Database.php**
 ### Endpoint for listing all active URLs
 > **GET** &nbsp; localhost/process/getActiveUrlsProcess
 ##### Example of response:
