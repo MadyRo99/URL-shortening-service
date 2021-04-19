@@ -7,7 +7,7 @@
 
     <main class="container mt-5">
         <h2>URL shortening service</h2>
-        <a href="/activeUrls" class="mt-4">Check available active URLs</a>
+        <a href="/URL-shortening-service/activeUrls" class="mt-4">Check available active URLs</a>
 
         <div class="form-group mt-2">
             <div id="long_url_container">
@@ -27,6 +27,6 @@
     </main>
 
     <?php require_once './resources/views/partials/footer.php'; ?>
-    <script src="../../public/js/shortenUrl.js"></script>
+    <script src="/URL-shortening-service/public/js/shortenUrl.js"></script>
 </body>
 </html>

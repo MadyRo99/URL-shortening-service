@@ -5,7 +5,7 @@ window.addEventListener('DOMContentLoaded', (event) => {
     let toast_message = document.getElementById("toast_message");
     let toast_header = document.getElementById("toast-header");
 
-    axios.get("process/getActiveUrlsProcess")
+    axios.get("/URL-shortening-service/process/getActiveUrlsProcess")
         .then((response) => {
             let result = response.data;
             if (result.success) {
@@ -22,7 +22,7 @@ window.addEventListener('DOMContentLoaded', (event) => {
                             let a_tag = document.createElement("a");
 
                             if (key === 'short_url') {
-                                content = document.createTextNode('localhost/' + value);
+                                content = document.createTextNode('localhost/URL-shortening-service/' + value);
                             } else {
                                 text = value;
                                 content = document.createTextNode(value);

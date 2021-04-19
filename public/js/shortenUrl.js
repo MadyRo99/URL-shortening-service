@@ -13,11 +13,11 @@ function shortenUrl() {
     let params = new URLSearchParams();
     params.append('long_url', long_url);
 
-    axios.post("process/shortenUrlProcess", params)
+    axios.post("/URL-shortening-service/process/shortenUrlProcess", params)
         .then((response) => {
             let result = response.data;
             if (result.success) {
-                short_url.value = 'localhost/' + result.data.short_url;
+                short_url.value = 'localhost/URL-shortening-service/' + result.data.short_url;
                 toast_header.style.backgroundColor = '#29ba50';
                 toast_message.innerText = result.info;
             } else {

@@ -13,7 +13,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'GET' && !empty($short_url) ) {
 
     if ($result['success']) {
         if (is_null($result['data'])) {
-            header('Location: /' . $short_url . "/expired");
+            header('Location: /URL-shortening-service/' . $short_url . "/expired");
             return;
         } else if (strpos($result['data']['long_url'],'https://') === false && strpos($result['data']['long_url'],'http://') === false) {
             $result['data']['long_url'] = 'https://' . $result['data']['long_url'];
@@ -21,7 +21,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'GET' && !empty($short_url) ) {
         header("Location:" . $result['data']['long_url']);
         return;
     } else {
-        header('Location: /' . $short_url . "/invalid");
+        header('Location: /URL-shortening-service/' . $short_url . "/invalid");
         return;
     }
 } else {

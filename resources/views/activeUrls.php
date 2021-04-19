@@ -6,7 +6,7 @@
 <body>
 
     <main class="container mt-5">
-        <a href="/">< Home</a>
+        <a href="/URL-shortening-service/">< Home</a>
         <h2 class="my-3">Available active URLs</h2>
         <table class="table table-striped table-dark d-none" id="links_table">
             <thead>
@@ -25,6 +25,6 @@
     </main>
 
     <?php require_once './resources/views/partials/footer.php'; ?>
-    <script src="../../public/js/activeUrls.js"></script>
+    <script src="/URL-shortening-service/public/js/activeUrls.js"></script>
 </body>
 </html>

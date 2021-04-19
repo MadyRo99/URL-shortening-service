@@ -3,7 +3,7 @@ Shortening URL application similar to TinyURL or Bitly.
 ### Usage
 > PHP Version 7.3.27
 >
-> The app is working on 'localhost' only and any usage of other ports (such as localhost:8000, etc.) for starting the web server will result in malfunction due to the *.htaccess* that was used for implementing the routing system.
+> The app is working on 'localhost/URL-shortening-service/' only and any usage of other ports (such as localhost:8000, etc.) for starting the web server will result in malfunction due to the *.htaccess* that was used for implementing the routing system.
 >
 > **NOTE**: If the user has already shortened 5 URLs and tries to enter a new one, then he will not be allowed to do so and he will get an error message but if he tries to shorten a URL that is already in the database he will get the short URL but no other entry will be inserted into the database.
 ### Credentials used for connecting to the MySQL Database:
@@ -15,9 +15,9 @@ Shortening URL application similar to TinyURL or Bitly.
 >
 > password = ""
 > 
-> **In order to create the database and the tables you just need to access 'localhost/', for example. Check the DB credentials before in config/Database.php**
+> **In order to create the database and the tables you just need to access 'localhost/URL-shortening-service/', for example. Check the DB credentials before in config/Database.php**
 ### Endpoint for listing all active URLs
-> **GET** &nbsp; localhost/process/getActiveUrlsProcess
+> **GET** &nbsp; localhost/URL-shortening-service/process/getActiveUrlsProcess
 ##### Example of response:
 ```
 {

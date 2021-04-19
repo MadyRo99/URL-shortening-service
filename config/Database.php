@@ -57,7 +57,7 @@ class Database {
             die("An error has occurred while creating the database: " . $e->getMessage());
         }
 
-        header("Location: /");
+        header("Location: /URL-shortening-service");
     }
 
     /**
